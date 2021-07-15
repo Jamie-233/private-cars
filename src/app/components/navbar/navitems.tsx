@@ -8,25 +8,25 @@ import menuStyle from './menuStyle';
 
 const ListContainer = styled.ul`
   ${tw`
-        flex
-        list-none
-    `};
+    flex
+    list-none
+  `};
 `;
 
 const NavItem = styled.li<{ menu?: any }>`
   ${tw`
-        text-sm
-        md:text-base
-        text-black
-        font-medium
-        mr-1
-        md:mr-5
-        cursor-pointer
-        transition
-        duration-300
-        ease-in-out
-        hover:text-gray-700
-    `};
+    text-sm
+    md:text-base
+    text-black
+    font-medium
+    mr-1
+    md:mr-5
+    cursor-pointer
+    transition
+    duration-300
+    ease-in-out
+    hover:text-gray-700
+  `};
 
   ${({ menu }) =>
     menu &&
@@ -35,8 +35,9 @@ const NavItem = styled.li<{ menu?: any }>`
         text-white
         text-xl
         mb-3
-      `}
-    `}
+        focus:text-white
+      `};
+    `};
 `;
 
 export function NavItems() {
